@@ -144,7 +144,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="mappin" catalog="system" id="fqk-bG-7Ei">
                             <connections>
-                                <segue destination="zHy-bv-jmq" kind="showDetail" id="blW-Oc-4Dd"/>
+                                <segue destination="zHy-bv-jmq" kind="show" id="blW-Oc-4Dd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -158,17 +158,17 @@
             <objects>
                 <viewController id="zHy-bv-jmq" customClass="EnterLocationViewController" customModule="OnTheMapProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n63-ED-RsA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where are you sharing from today? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1G-l0-RiZ">
-                                <rect key="frame" x="38" y="32" width="299.5" height="21"/>
+                                <rect key="frame" x="38" y="76" width="299.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter location here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="euE-8K-ttm">
-                                <rect key="frame" x="0.0" y="85" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="129" width="375" height="150"/>
                                 <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="IA8-Ko-4xx"/>
@@ -178,7 +178,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktn-ra-RZW">
-                                <rect key="frame" x="145" y="282" width="85" height="30"/>
+                                <rect key="frame" x="145" y="326" width="85" height="30"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Find on map"/>
                                 <connections>
@@ -186,7 +186,7 @@
                                 </connections>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Nw5-tl-70u">
-                                <rect key="frame" x="177.5" y="254" width="20" height="20"/>
+                                <rect key="frame" x="177.5" y="298" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -207,7 +207,7 @@
                     <connections>
                         <outlet property="enterLocationTextField" destination="euE-8K-ttm" id="v2e-da-dQ1"/>
                         <outlet property="loadingIndicator" destination="Nw5-tl-70u" id="qXO-wp-gWP"/>
-                        <segue destination="AG8-G2-ASN" kind="showDetail" identifier="sendPin" id="q8u-wn-yfM"/>
+                        <segue destination="AG8-G2-ASN" kind="show" identifier="sendPin" id="q8u-wn-yfM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9e-x7-QwD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -260,7 +260,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="mappin" catalog="system" id="OaU-Ce-HlN">
                             <connections>
-                                <segue destination="zHy-bv-jmq" kind="showDetail" id="leb-e1-e9O"/>
+                                <segue destination="zHy-bv-jmq" kind="show" id="leb-e1-e9O"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -296,11 +296,11 @@
             <objects>
                 <viewController id="AG8-G2-ASN" customClass="UserLocationViewController" customModule="OnTheMapProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VTy-jo-qAE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a URL here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a7W-Ai-7zm" userLabel="UserUrl">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="150"/>
                                 <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="VIP-c2-LCx"/>
@@ -310,10 +310,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FoO-fz-IBX">
-                                <rect key="frame" x="0.0" y="150" width="375" height="497"/>
+                                <rect key="frame" x="0.0" y="194" width="375" height="424"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaT-yL-Xfn">
-                                <rect key="frame" x="163" y="206" width="49" height="30"/>
+                                <rect key="frame" x="163" y="250" width="49" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>

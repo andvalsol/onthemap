@@ -51,7 +51,7 @@ class UserLocationViewController: UIViewController, MKMapViewDelegate {
         UdacityClient.postPin(user: PostUser(uniqueKey: UdacityClient.Auth.accountKey!, firstName: "Andrey", lastName: "Valverde", mapString: locationName, mediaURL: userUrl, latitude: coordinate.latitude, longitude: coordinate.latitude)) { (success, error) in
             if success {
                 // Return to the root view controller
-                self.navigationController?.popToRootViewController(animated: true)
+                self.navigationController!.popToRootViewController(animated: true)
                 
             } else {
                 // Show the user a proper error message

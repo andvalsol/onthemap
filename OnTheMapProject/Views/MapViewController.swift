@@ -76,6 +76,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         if mapPin == nil {
             mapPin = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
             mapPin!.canShowCallout = true
+            mapPin!.rightCalloutAccessoryView = UIButton(type: .detailDisclosure) as UIButton
             mapPin!.pinTintColor = .blue
         } else {
             mapPin!.annotation = annotation
